@@ -1,0 +1,14 @@
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\bin\Debug\net9.0\DesafioNotas.exe
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\bin\Debug\net9.0\DesafioNotas.deps.json
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\bin\Debug\net9.0\DesafioNotas.runtimeconfig.json
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\bin\Debug\net9.0\DesafioNotas.dll
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\bin\Debug\net9.0\DesafioNotas.pdb
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\obj\Debug\net9.0\DesafioNotas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\obj\Debug\net9.0\DesafioNotas.AssemblyInfoInputs.cache
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\obj\Debug\net9.0\DesafioNotas.AssemblyInfo.cs
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\obj\Debug\net9.0\DesafioNotas.csproj.CoreCompileInputs.cache
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\obj\Debug\net9.0\DesafioNotas.dll
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\obj\Debug\net9.0\refint\DesafioNotas.dll
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\obj\Debug\net9.0\DesafioNotas.pdb
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\obj\Debug\net9.0\DesafioNotas.genruntimeconfig.cache
+C:\Users\54232743898\Desktop\BackEndMoura\DesafioNotas\obj\Debug\net9.0\ref\DesafioNotas.dll
