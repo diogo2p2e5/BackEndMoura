@@ -1,0 +1,15 @@
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\bin\Debug\net9.0\Lista_Exercicio5.exe
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\bin\Debug\net9.0\Lista_Exercicio5.deps.json
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\bin\Debug\net9.0\Lista_Exercicio5.runtimeconfig.json
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\bin\Debug\net9.0\Lista_Exercicio5.dll
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\bin\Debug\net9.0\Lista_Exercicio5.pdb
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\obj\Debug\net9.0\Lista_Exercicio5.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\obj\Debug\net9.0\Lista_Exercicio5.AssemblyInfoInputs.cache
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\obj\Debug\net9.0\Lista_Exercicio5.AssemblyInfo.cs
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\obj\Debug\net9.0\Lista_Exercicio5.csproj.CoreCompileInputs.cache
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\obj\Debug\net9.0\Lista_Exercicio5.sourcelink.json
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\obj\Debug\net9.0\Lista_Exercicio5.dll
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\obj\Debug\net9.0\refint\Lista_Exercicio5.dll
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\obj\Debug\net9.0\Lista_Exercicio5.pdb
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\obj\Debug\net9.0\Lista_Exercicio5.genruntimeconfig.cache
+C:\Users\54232743898\Desktop\BackEndMoura\Lista_Exercicio5\obj\Debug\net9.0\ref\Lista_Exercicio5.dll

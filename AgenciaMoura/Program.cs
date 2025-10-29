@@ -1,5 +1,7 @@
-﻿using System.Numerics;
-using System.Runtime.Serialization.Formatters;
+﻿using System.Globalization;
+using System.Numerics;
+using System.Runtime.CompilerServices;
+
 
 int opcao = -1;
 string[] nomes = new string[10];
@@ -22,6 +24,7 @@ do
     Console.Write($"Opção: ");
     opcao = int.Parse(Console.ReadLine());
 
+
     switch (opcao)
     {
         case 0:
@@ -34,13 +37,13 @@ do
             Depositar();
             break;
         case 3:
-            // Sacar();
+            Sacar();
             break;
         case 4:
-            // Tranferir();
+            Tranferir();
             break;
         case 5:
-            // ListarClientes();
+            ListarClientes();
             break;
 
 
@@ -48,11 +51,13 @@ do
 
 
         default:
+            Console.WriteLine($"Opção inválida");
+
             break;
-    }
+    }//fim do switch
 
 
-
+    //ao final de cada opção, faz uma parada no sistema
     Console.WriteLine($"Pressione ENTER para continuar");
     Console.WriteLine();
 
@@ -60,16 +65,18 @@ do
 
 
 void CadastrarCliente()
+
 {
     Console.WriteLine($"=== CADASTRE O CLIENTE ===");
+    //validar se há espaço para cadastrar no array
     if (totalClientes >= 10)
     {
         Console.WriteLine($"Limite de cadastros atingido");
-        return;
+        return;//para a função aqui - não executa o código abaixo
     }
-
-    Console.WriteLine($"Digite o nome do cliente");
-    nomes[totalClientes] = Console.ReadLine();
+    //cadastrar o cliente no array - 0
+    Console.Write($"Digite o nome do cliente: ");
+    nomes[totalClientes] = Console.ReadLine();//cadastra o nome do cliente
     saldo[totalClientes] = 0;
     totalClientes++;
 
@@ -78,20 +85,107 @@ void CadastrarCliente()
 }
 void Depositar()
 {
-    Console.WriteLine($"=== DEPOSITE EM UMA CONTA ===");
-    for (int i = 0; i < totalClientes; i++)
+    int idCliente = BuscarCliente();//retorna o índice do array que o cliente está armazenado
+
+    if (idCliente == -1)
     {
-         Console.WriteLine($"{i} - {nomes[i]} | saldo: R${saldo[i]}");
+        return;
     }
+    Console.Write($"Valor de depósito: ");
+    float valor = float.Parse(Console.ReadLine());
+    saldo[idCliente] += valor;
+    Console.WriteLine($"Deposito de R${valor:F2} realizado");
 
-
+   
 }
+
 void ListarClientes()
+
+
+
 {
     Console.WriteLine($"== LISTA DE CLIENTES ==");
 
-    System.Console.WriteLine($"");
+    for (int i = 0; i < totalClientes; i++)
+    {
+        Console.WriteLine($"{i} - {nomes[i]} | saldo: R${saldo[i]}");
+    }
 
+
+
+}
+void Sacar()
+{
+    int idCliente = BuscarCliente();
+    if (idCliente == -1)
+    {
+        return;
+    }
+
+    Console.Write($"Qual o valor para o saque: ");
+    float valor = float.Parse(Console.ReadLine());
+
+    if (saldo[idCliente] >= valor && valor > 0)
+    {
+        saldo[idCliente] -= valor;
+        Console.WriteLine($"Saque realizado com sucesso!");
+        
+    }
+    else
+    {
+        Console.WriteLine($"Saldo insuficiente!");
+    }
+
+}
+void Tranferir()
+{
+    Console.WriteLine($"== TRANSFERENCIA ==");
+    Console.Write($"Conta de origem");
+    int idOrigem = BuscarCliente();
+
+    if (idOrigem == -1) return;
+
+
+    Console.Write($"Conta de destino: ");
+    int idDestino = BuscarCliente();
+
+    if (idDestino == -1) return;
+
+Console.Write($"Valor a ser transferido: ");
+    float valor = float.Parse(Console.ReadLine());
+
+    if (saldo[idDestino] >= valor && valor > 0)
+    {
+        saldo[idOrigem] -= valor;
+        saldo[idDestino] += valor;
+        Console.WriteLine($"Transferencia concluida");
+        
+    }
+    else
+    {
+        Console.WriteLine($"Saldo insuficiente!");
+        
+    }
+
+}
+
+
+int BuscarCliente()
+{
+    //listar cliente
+    ListarClientes();//mostra a lista de clientes
+    //pedir pro usuario escolher o cliente
+    Console.Write($"Digite o número do cliente: ");
+    int idCliente = int.Parse(Console.ReadLine());
+    if (idCliente < 0 || idCliente >= totalClientes)
+        {
+        Console.WriteLine($"Cliente não encontrado");
+        return -1;
+        
+    }
+    
+    //retornar ou devolver o id do cliente
+    return idCliente;//vai ser torcado pelo id do cliente buscado
 
 
 }
