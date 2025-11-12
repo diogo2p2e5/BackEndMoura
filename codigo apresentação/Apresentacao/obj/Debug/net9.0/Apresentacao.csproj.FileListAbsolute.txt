@@ -1,0 +1,14 @@
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\obj\Debug\net9.0\Apresentacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\obj\Debug\net9.0\Apresentacao.AssemblyInfoInputs.cache
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\obj\Debug\net9.0\Apresentacao.AssemblyInfo.cs
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\obj\Debug\net9.0\Apresentacao.csproj.CoreCompileInputs.cache
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\bin\Debug\net9.0\Apresentacao.exe
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\bin\Debug\net9.0\Apresentacao.deps.json
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\bin\Debug\net9.0\Apresentacao.runtimeconfig.json
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\bin\Debug\net9.0\Apresentacao.dll
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\bin\Debug\net9.0\Apresentacao.pdb
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\obj\Debug\net9.0\Apresentacao.dll
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\obj\Debug\net9.0\refint\Apresentacao.dll
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\obj\Debug\net9.0\Apresentacao.pdb
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\obj\Debug\net9.0\Apresentacao.genruntimeconfig.cache
+C:\Users\54232743898\Desktop\codigo apresentação\Apresentacao\obj\Debug\net9.0\ref\Apresentacao.dll

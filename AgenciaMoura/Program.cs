@@ -1,9 +1,7 @@
-﻿using System.Globalization;
-using System.Numerics;
-using System.Runtime.CompilerServices;
+﻿
+using System.Diagnostics.Contracts;
 
-
-int opcao = -1;
+int opcao;
 string[] nomes = new string[10];
 float[] saldo = new float[10];
 int totalClientes = 0;
@@ -12,6 +10,7 @@ int totalClientes = 0;
 
 do
 {
+    Console.Clear();
     Console.WriteLine(@$"=== SISTEMA BANCÁRIO SIMPLES ===
                             
      1. Cadastrar Cliente
@@ -59,7 +58,7 @@ do
 
     //ao final de cada opção, faz uma parada no sistema
     Console.WriteLine($"Pressione ENTER para continuar");
-    Console.WriteLine();
+    Console.ReadLine();
 
 } while (opcao != 0);
 
@@ -91,18 +90,18 @@ void Depositar()
     {
         return;
     }
+
+
     Console.Write($"Valor de depósito: ");
     float valor = float.Parse(Console.ReadLine());
     saldo[idCliente] += valor;
     Console.WriteLine($"Deposito de R${valor:F2} realizado");
 
-   
+
+
 }
 
 void ListarClientes()
-
-
-
 {
     Console.WriteLine($"== LISTA DE CLIENTES ==");
 
@@ -117,7 +116,7 @@ void ListarClientes()
 void Sacar()
 {
     int idCliente = BuscarCliente();
-    if (idCliente == -1)
+    if (idCliente == -1) 
     {
         return;
     }
@@ -154,7 +153,7 @@ void Tranferir()
 Console.Write($"Valor a ser transferido: ");
     float valor = float.Parse(Console.ReadLine());
 
-    if (saldo[idDestino] >= valor && valor > 0)
+    if (saldo[idOrigem] >= valor && valor > 0)
     {
         saldo[idOrigem] -= valor;
         saldo[idDestino] += valor;
