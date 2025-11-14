@@ -3,10 +3,22 @@ namespace Heranca
 {
     public class Veiculo
     {
+
         public string Marca;
 
         public string Modelo;
 
         public int Ano;
+
+
+        public void acelera()
+        {
+            Console.WriteLine($"Acelerando o Veiculo");
+
+        }
     }
-}
+
+
+
+    }
+    
