@@ -26,10 +26,10 @@ namespace Encapsulamento
 
         public void DefinirMarca(string valor)
         {
-            Marca = valor;
 
             valor = "volkswagen";
 
+            Marca = valor;
 
         }
 
@@ -52,3 +52,4 @@ namespace Encapsulamento
         }
     }
 }
+

@@ -13,6 +13,7 @@ Carro fuzca = new Carro();
 
 fuzca.Acelerar(100);
 fuzca.Frear(20);
+fuzca.DefinirMarca("volkswagen");
 
 Console.WriteLine($"Marca do carro: {fuzca.ObterMarca()}");
 // Console.WriteLine($"Modelo do carro: {fuzca.ObterModelo()}");
