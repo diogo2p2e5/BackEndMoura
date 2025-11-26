@@ -8,27 +8,27 @@ List<IImprimivel> Documentos = new List<IImprimivel>();
 Console.WriteLine($"FATURAS:");
 foreach (var Fat in Documentos)
 {
-    if(Fat is Fatura)
+    if (Fat is Fatura)
     {
-    Fat.imprimir(); 
+        Fat.imprimir();
     }
 }
 
 Console.WriteLine($"CONTRATOS:");
 foreach (var Cont in Documentos)
 {
-    if(Cont is Contrato)
+    if (Cont is Contrato)
     {
-    Cont.imprimir(); 
+        Cont.imprimir();
     }
 }
 
 Console.WriteLine($"RELATORIOS:");
 foreach (var Rel in Documentos)
 {
-    if(Rel is Relatorio)
+    if (Rel is Relatorio)
     {
-    Rel.imprimir(); 
+        Rel.imprimir();
     }
 }
 int opcao;
@@ -48,38 +48,38 @@ do
     ");
     opcao = int.Parse(Console.ReadLine());
 
-switch (opcao)
-{
-    case 1:
-    CadastrarFatura();
-        break;
-    case 2:
-    Console.WriteLine($"Cadastrar Relatório em desenvolvimento");
-        break;
-    case 3:
-    Console.WriteLine($"Cadastrar Contrato em desenvolvimento");
-        break;
-    case 4:
-    ListarFaturas();
-        break;
-    case 5:
-    Console.WriteLine($"Listar Relatórios em desenvolvimento");
-        break;
-    case 6:
-    Console.WriteLine($"Listar Contratos em desenvolvimento");
-        break;
-    case 0:
-    Console.WriteLine($"Sair");
-        break;
+    switch (opcao)
+    {
+        case 1:
+            CadastrarFatura();
+            break;
+        case 2:
+            CadastrarRelatorio();
+            break;
+        case 3:
+            CadastrarContrato();
+            break;
+        case 4:
+            ListarFaturas();
+            break;
+        case 5:
+            ListarRelatorio();
+            break;
+        case 6:
+            ListarContrato();
+            break;
+        case 0:
+            Console.WriteLine($"Sair");
+            break;
 
-    default:
-    Console.WriteLine($"Opção inválida");
-    
-        break;
-}
+        default:
+            Console.WriteLine($"Opção inválida");
 
-Console.WriteLine($"Pressione <Enter> para continuar");
-Console.ReadLine();
+            break;
+    }
+
+    Console.WriteLine($"Pressione <Enter> para continuar");
+    Console.ReadLine();
 } while (opcao != 0);
 
 
@@ -95,26 +95,51 @@ void CadastrarFatura()
     string empresa = Console.ReadLine();
 
     Console.Write($"Digite o valor da fatura: ");
-    float valor = float.Parse(Console.ReadLine()) ;
+    float valor = float.Parse(Console.ReadLine());
 
     Console.Write($"Dias de atraso da fatura: ");
-    int qtdAtraso = int.Parse( Console.ReadLine());
+    int qtdAtraso = int.Parse(Console.ReadLine());
 
     Console.WriteLine($"Fatura Cadastrada com sucesso!");
-    
 
-Fatura fat = new Fatura(dev, empresa, valor, qtdAtraso);
-Documentos.Add(fat);
-    
+
+    Fatura fat = new Fatura(dev, empresa, valor, qtdAtraso);
+    Documentos.Add(fat);
+
 }
 void CadastrarRelatorio()
 {
-    
+    Console.Write($"DIgite o Nome do responsavel pelo relátorio: ");
+    string responsavel = Console.ReadLine();
+
+    Console.WriteLine($"Digite o Relátorio: ");
+    string relatorio = Console.ReadLine();
+
+    Relatorio rela = new Relatorio("nome", "texto");
+
+    Relatorio Rel = new Relatorio(responsavel, relatorio);
+    Documentos.Add(Rel);
+
+
 
 }
 void CadastrarContrato()
 {
-    
+    Console.Write($"Digite o Nome do contratante: ");
+    string nome = Console.ReadLine();
+
+    Console.Write($"Digite as Clausulas do contrato:");
+    string clausulas = Console.ReadLine();
+
+    Contrato contrato = new Contrato("nome", "texto");
+
+
+    Console.WriteLine($"Contrato cadastrado com sucesso!");
+
+    Contrato Cont = new Contrato(nome, clausulas);
+    Documentos.Add(Cont);
+
+
 
 }
 void ListarFaturas()
@@ -122,22 +147,39 @@ void ListarFaturas()
     Console.WriteLine($"Listando Faturas");
     foreach (var item in Documentos)
     {
-        if(item is Fatura)
+        if (item is Fatura)
         {
             item.imprimir();
         }
     }
-    
+
 
 }
 void ListarRelatorio()
 {
-    
+    Console.WriteLine($"Listando Relátorio");
+    foreach (var item in Documentos)
+    {
+        if (item is Relatorio)
+        {
+            item.imprimir();
+        }
+    }
+
 
 }
 void ListarContrato()
 {
-    
+    Console.WriteLine($"Listando Contratos");
+    foreach (var item in Documentos)
+    {
+        if (item is Contrato)
+        {
+            item.imprimir();
+        }
+
+
+    }
 
 }
 

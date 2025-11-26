@@ -5,12 +5,30 @@ using System.Threading.Tasks;
 
 namespace Exercicio02
 {
-    public class Relatorio : IImprimivel
+  public class Relatorio : IImprimivel
+  {
+    public string NomeResponsavel;
+
+    public string TextoRelatorio;
+
+    public Relatorio(string NR, string TR)
     {
-     public void imprimir()
-        {
-          Console.WriteLine($"Imprimindo o relatorio....");
-          
-        }
+      NomeResponsavel = NR;
+      TextoRelatorio = TR;
+
     }
+
+
+
+    public void imprimir()
+    {
+      Console.WriteLine($"Imprimindo o relatorio....");
+      Console.WriteLine($@"
+Nome: {NomeResponsavel}
+{TextoRelatorio}
+      ");
+      
+
+    }
+  }
 }
