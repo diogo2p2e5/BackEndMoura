@@ -1,0 +1,19 @@
+<h1>Lista de Frutas</h1>
+
+<ul>
+    @foreach (var item in ViewBag.Fruta)
+    {
+
+<p>
+Código: @item.id<br>
+Fruta: @item.Nome<br>
+Preço: @item.Preco<br>
+Quantidade no estoque: @item.Quantidade<br>
+Categoria: @item.Categoria
+
+
+</p>
+        
+    }
+
+</ul>
