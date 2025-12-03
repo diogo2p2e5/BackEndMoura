@@ -1,0 +1,95 @@
+main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main>div {
+
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+}
+
+form {
+    /* background-color: aqua;  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 25px;
+    padding: 3%;
+}
+
+
+#cadastro-estilo {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+main>div>form>p {
+    text-align: center;
+    display: flex;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-cinza);
+}
+
+.formulario-botao-azul {
+    width: 100%;
+}
+
+.estilo-formulario{
+    margin: 20px;
+    max-width: 400px;
+    padding: 50px;
+    
+}
+
+
+.formulario-campos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.estilo-cadastro{
+    width: 30%;
+    border: var(--borda);
+    gap: 15px;
+    padding: 15 px;
+
+
+}
+
+.botao-imagem{
+display: none;
+
+
+}
+
+#imagem-logo{
+    width: 100%;
+    height: auto;
+}
+
+.estilo-formulario > img{
+max-width: 100%;
+}
+
